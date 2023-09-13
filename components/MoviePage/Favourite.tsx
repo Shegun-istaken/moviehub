@@ -22,8 +22,12 @@ export default function Favourite() {
         onClick={toggleClick}
         className="w-16"
       />
-      <p className={`text-center ${liked ? "text-rose font-bold" : "text-myGray"} `}>
-        Add to Favourites
+      <p
+        className={`text-center ${
+          liked ? "text-rose font-bold" : "text-myGray"
+        } `}
+      >
+        {liked ? "Added to Favourites" : "Add to Favourites"}
       </p>
     </div>
   );
