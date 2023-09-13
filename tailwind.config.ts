@@ -34,16 +34,16 @@ const config: Config = {
           900: "#111827",
         },
       },
-      // screens: {
-      //   xsm: "320px",
-      //   msm: "480px",
-      //   // 'sm': '640px',
-      //   // 'md': '768px',
-      //   xmd: "856px",
-      //   // 'lg': '1024px',
-      //   // 'xl': '1280px',
-      //   // '2xl': '1536px'
-      // },
+      screens: {
+        xsm: "320px",
+        msm: "480px",
+        // 'sm': '640px',
+        // 'md': '768px',
+        xmd: "856px",
+        // 'lg': '1024px',
+        // 'xl': '1280px',
+        // '2xl': '1536px'
+      },
       // backgroundImage: {
       //   'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       //   'gradient-conic':

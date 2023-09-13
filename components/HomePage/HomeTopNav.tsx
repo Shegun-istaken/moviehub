@@ -5,7 +5,7 @@ import menu from "@/lib/assets/redMenu.svg";
 
 export default function HomeTopNav() {
   return (
-    <div className=" pt-8 pb-4 flex flex-col items-center gap-y-4 md:flex-row md:px-16 md:justify-between lg:px-24 xl:px-40 xl:w-3/4 xl:px-0 xl:mx-auto">
+    <div className=" pt-8 pb-4 flex flex-col items-center gap-y-4 md:flex-row md:px-16 md:justify-between lg:px-24 xl:px-40 xl:w-11/12 xl:px-0 xl:mx-auto">
       <Image
         className="w-36 xl:w-40"
         src={logo}
