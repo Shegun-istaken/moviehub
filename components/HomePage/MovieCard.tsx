@@ -17,9 +17,9 @@ export default function MovieCard({ movie }: { movie: any }) {
           data-testid="movie-poster"
         />
         <div className="flex flex-col gap-y-2 my-4 items-between">
-          <h2 className="text-lg font-bold">{movie.title}</h2>
+          <h2 className="text-lg font-bold" data-testid='movie-title' >{movie.title}</h2>
           <div className="flex justify-between items-center">
-            <p className="text-sm">{movie.release_date}</p>
+            <p className="text-sm" data-testid='movie-release-date' >{movie.release_date}</p>
             <HomeRating rating={movie.vote_average} />
           </div>
           <button className="bg-rose text-white py-2 rounded xl:w-3/4 xl:mx-auto ">

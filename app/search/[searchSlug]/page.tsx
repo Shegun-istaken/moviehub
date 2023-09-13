@@ -15,14 +15,16 @@ export default async function SearchResults({
 
   return (
     <div>
-      {data?.results ? (
+      {data?.results?.length > 0 ? (
         <div className="flex flex-col py-8 gap-y-8 md:flex-row md:flex-wrap md:gap-x-2 md:justify-between md:mx-8 xmd:mx-16 ">
           {data?.results.map((movie: any) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}
         </div>
       ) : (
-        <h1>No results for {searchSlug}</h1>
+        <h1 className="mx-8 md:mx-16 mt-8 text-center text-rose text-lg">
+          No results for &apos;{searchSlug}&apos;
+        </h1>
       )}
     </div>
   );
