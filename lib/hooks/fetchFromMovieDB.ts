@@ -1,10 +1,11 @@
+const { token } = process.env;
+
 async function fetchMovies(link: string) {
   const options = {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhYzg1MTE5MjdlOWMyNjIyNGY0MmNiODE2NWFhNDY4ZCIsInN1YiI6IjY0ZmZlODQwZWZlYTdhMDBmZDFiMzI3ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.hFa1_38YDVfNLUgUFt9YNTrZGzIpCirOZCyIUBdO1ps",
+      Authorization: `Bearer ${token}`,
     },
   };
   try {

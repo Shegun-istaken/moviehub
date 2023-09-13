@@ -2,6 +2,7 @@ import imdb from "@/lib/assets/imdb.png";
 import rt from "@/lib/assets/rottenTomatoes.png";
 import Image from "next/image";
 import play from "@/lib/assets/play.svg";
+import fetchMovies from "@/lib/hooks/fetchFromMovieDB";
 
 export default function HomeHeaderContent() {
   return (
